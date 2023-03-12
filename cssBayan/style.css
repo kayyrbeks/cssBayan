@@ -173,3 +173,51 @@ p {
   opacity: 1;
   transition: all 0.3s ease;
 }
+
+/* Large Mobile Devices*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .meme-container {
+    max-width: 80vw;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .meme-description,
+  p {
+    font-size: 1.2rem;
+  }
+
+  .meme-status:checked ~ .meme-body,
+  .meme-status:hover ~ .meme-body,
+  .meme-status:active ~ .meme-body {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 999px) {
+  .meme-container {
+    max-width: 60vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .meme-description,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .meme-status:checked ~ .meme-body,
+  .meme-status:hover ~ .meme-body,
+  .meme-status:active ~ .meme-body {
+    width: 40vw;
+    height: 40vw;
+  }
+}
